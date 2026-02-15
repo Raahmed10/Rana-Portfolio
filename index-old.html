@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rana Abuhaiamed | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/bacbc4a8e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- --------------------- Header --------------------- -->
+  <header id="site-header" class="site-header">
+   <div class="header-left">
+    <button id="menu-open" class="menu-btn" aria-label="Open menu" type="button">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="lang-switch">
+       <i id="lang-toggle" class="fa-solid fa-globe lang-icon" title="Change Language"></i>
+    </div>
+  </div>
+   <div class="header-right">
+    
+  </div>
+</header>
+
+<!-- --------------------- Navigation --------------------- -->
+  <nav class="main-nav">
+  <ul id="menu" class="side-menu">
+    <li class="menu-top">
+      <button id="menu-close" class="menu-btn" aria-label="Close menu" type="button">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </button>
+    </li>
+    <li><a href="#about" data-en="About Me" data-ar="نبذه عني ">About Me</a></li>
+    <li><a href="#certificates" data-en="Certificates" data-ar="الشهادات">Certificates</a></li>
+    <li><a href="#services" data-en="My Skills" data-ar="مهاراتي">My Skills</a></li>
+    <li><a href="#portfolio" data-en="My Projects" data-ar="مشاريعي">My Projects</a></li>
+    <li><a href="#contact" data-en="Contact Me" data-ar="تواصل معي">Contact Me</a></li>
+  </ul>
+</nav>
+</header>
+
+<!-- --------------------- Profile Section --------------------- -->
+<div class="container">
+  <div class="profile-info">
+    <img src="image/Photo.png" alt="profile" class="profile-pic" />
+    <div class="profile-text">
+  <p data-en="UI/UX Designer" data-ar="مصممة واجهات وتجربة مستخدم">UI/UX Designer</p>
+  <h1>
+    <span data-en="Rana Ahmed Abuhaimed" data-ar="رنا أحمد أبوحيمد">Rana Abuhaimed</span><br>
+    <span data-en="Software Engineering Trainee" data-ar="تخصص هندسة البرمجيات">Software Engineering Trainee</span>
+  </h1>
+    </div>
+  </div>
+</div>
+<!-- --------------------- About Me --------------------- -------->
+<div id="about">
+<div class="container">
+  <div>
+     <div class="about-col-2">
+      <h1 class="sub-title" data-en="About Me" data-ar="نبذة عني"> About Me </h1>
+      <p data-en="I am Rana Abuhaimed, an advanced Software Engineering student. I have a strong academic and practical background in software development, system design, and requirements analysis. I am passionate about building scalable technical solutions that improve efficiency and deliver real value, and I enjoy designing seamless user experiences through UI/UX and making data-driven decisions."
+       data-ar=" أنا رنا أبوحيمد، طالبة هندسة برمجيات متقدمة. أمتلك خلفية أكاديمية وعملية  في تطوير البرمجيات، وتصميم الأنظمة، وتحليل المتطلبات. شغوفة ببناء حلول تقنية قابلة للتوسع تسهم في تحسين الكفاءة وتقديم قيمة حقيقية، كما أستمتع بتصميم تجارب مستخدم سلسة من خلال UI/UX، واتخاذ قرارات مدعومة بالبيانات. ">
+      I’m Rana Abuhaimed, an advanced Software Engineering student based in Riyadh...
+    </p>
+ <!-- Tabs -->
+      <div class="tab-titles">
+      <span class="tab-indicator"></span>
+      <p class="tab-links active-link" onclick="opentab(event,'skills')" data-en="Skills" data-ar="المهارات">Skills</p>
+      <p class="tab-links" onclick="opentab(event,'experience')" data-en="Experience" data-ar="الخبرة">Experience</p>
+      <p class="tab-links" onclick="opentab(event,'education')" data-en="Education" data-ar="التعليم">Education</p>
+    </div>
+
+    <div class="tab-contents active-tab" id="skills">
+    <ul>
+       <li>
+            <span data-en="UI/UX" data-ar="تصميم واجهات المستخدم">UI/UX</span><br>
+            <span data-en="Designing web/App interfaces" data-ar="تصميم واجهات المواقع والتطبيقات">Designing web/App interfaces</span>
+        </li>
+        <li>
+            <span data-en="Web development" data-ar="تطوير الويب">Web development</span><br>
+            <span data-en="Web app development" data-ar="تطوير تطبيقات الويب">Web app development</span>
+        </li>
+        <li>
+            <span data-en="App development" data-ar="تطوير التطبيقات">App development</span><br>
+            <span data-en="Building Android/ios apps" data-ar="بناء تطبيقات أندرويد وiOS">Building Android/ios apps</span>
+        </li>
+    </ul>
+</div>
+
+<div class="tab-contents" id="experience">
+    <ul>
+        <li>
+            <span data-en="COOP Trainee" data-ar="التدريب التعاوني">COOP Trainee</span><br>
+            <span data-en="Enterprise Architecture & Data | Solutions by STC (Sep2026)" data-ar="هندسة المؤسسات والبيانات | حلول STC (سبتمبر 2026)">Enterprise Architecture & Data | Solutions by STC (sep2026)</span>
+        </li>
+        <li>
+            <span data-en="Graduation Project" data-ar="مشروع التخرج">Graduation Project</span><br>
+            <span data-en="WJHATAK | Al Yamamah University (Dec2025)" data-ar="WJHATAK | جامعة اليمامة (ديسمبر 2025)">WJHATAK | Al Yamamah University (Dec2025)</span>
+        </li>
+        <li>
+            <span data-en="Summer Training Program" data-ar="برنامج التدريب الصيفي">Summer Training Program</span><br>
+            <span data-en="Corporate & Institutional Banking | Bank AlJazira (Jul2025)" data-ar="الخدمات المصرفية للشركات والمؤسسات | بنك الجزيرة (يوليو 2025)">Corporate & Institutional Banking | Bank AlJazira (Jul2025)</span>
+        </li>
+    </ul>
+</div> 
+
+<div class="tab-contents" id="education">
+    <ul>
+        <li>
+            <span data-en="SQL Fundamentals for Data Analysts" data-ar="أساسيات SQL لمحللي البيانات">SQL Fundamentals for Data Analysts</span><br>
+            <span data-en="Corporate Finance Institute (CFI) via Coursera" data-ar="معهد التمويل المؤسسي (CFI) عبر كورسيرا">Corporate Finance Institute (CFI) via Coursera</span>
+        </li>
+        <li>
+            <span data-en="Financial Statements in Power BI" data-ar="البيانات المالية في Power BI">Financial Statements in Power BI</span><br>
+            <span data-en="Corporate Finance Institute (CFI) via Coursera" data-ar="معهد التمويل المؤسسي (CFI) عبر كورسيرا">Corporate Finance Institute (CFI) via Coursera</span>
+        </li>
+        <li>
+            <span data-en="Project Management Professional (PMP)" data-ar="محترف إدارة المشاريع (PMP)">Project Management Professional (PMP)</span><br>
+            <span data-en="On-Campus University" data-ar="جامعة داخل الحرم الجامعي">On-Campus University</span>
+        </li>
+    </ul>
+</div>
+
+     </div>
+    </div>
+  </div>
+</div>
+
+<!-- --------------------- Certificates --------------------- -->
+<div id="certificates">
+  <h1 class="sub-title">
+    <span data-en="Certificates" data-ar="الشهادات">Certificates</span>
+  </h1>
+  <div class="certificates-list">
+    <div class="certificate-card" onclick="openCert(this)">
+      <img src="image/C1.jpg" alt="SQL Certificate">
+      <h3>
+        <span 
+          data-en="SQL Fundamentals for Data Analysts"
+          data-ar="أساسيات SQL لمحللي البيانات">
+          SQL Fundamentals for Data Analysts
+        </span>
+      </h3>
+    </div>
+    <div class="certificate-card" onclick="openCert(this)">
+      <img src="image/C2.jpg" alt="Power BI Certificate">
+      <h3>
+        <span 
+          data-en="Financial Statements in Power BI"
+          data-ar="القوائم المالية باستخدام Power BI">
+          Financial Statements in Power BI
+        </span>
+      </h3>
+    </div>
+
+    <div class="certificate-card" onclick="openCert(this)">
+      <img src="image/C3.jpg" alt="PMP Certificate">
+      <h3>
+        <span 
+          data-en="Project Management Professional(PMP)"
+          data-ar="ادارة المشاريع الاحترافية">
+          Project Management Professional(PMP)
+        </span>
+      </h3>
+    </div>
+
+  </div>
+</div>
+<!-- --------------------- My Skills --------------------- -->
+<div id="services">
+<div class="container">
+  <h1 class="sub-title"data-en="My Skills"data-ar="مهاراتي">My Skills</h1>
+  <div class="services-list">
+    <body>
+  <div>
+    <i class="fa-solid fa-globe"></i>
+    <h2 data-en="Web Development" data-ar="تطوير الويب">Web Development</h2>
+    <p data-en="I develop responsive web pages using HTML, CSS, and JavaScript to build clean and functional websites."
+       data-ar="أقوم بتطوير صفحات ويب متجاوبة باستخدام HTML وCSS وJavaScript لبناء مواقع نظيفة وعملية.">
+       I develop responsive web pages using HTML, CSS, and JavaScript to build clean and functional websites.
+    </p>
+  </div>
+
+  <div>
+    <i class="fa-solid fa-mobile-screen-button"></i>
+    <h2 data-en="UI/UX Development" data-ar="تطوير واجهات المستخدم وتجربة المستخدم">UI/UX Development</h2>
+    <p data-en="I create user-friendly interfaces and improve user experience through research, wireframes, and prototypes."
+       data-ar="أقوم بإنشاء واجهات سهلة الاستخدام وتحسين تجربة المستخدم من خلال البحث والنماذج الأولية.">
+       I create user-friendly interfaces and improve user experience through research, wireframes, and prototypes.
+    </p>
+  </div>
+
+  <div>
+    <i class="fa-solid fa-brush"></i>
+    <h2 data-en="Web Design" data-ar="تصميم الويب">Web Design</h2>
+    <p data-en="I design modern and responsive websites with clean layouts that provide a great user experience."
+       data-ar="أقوم بتصميم مواقع حديثة ومتجاوبة بتنسيقات نظيفة توفر تجربة مستخدم ممتازة.">
+       I design modern and responsive websites with clean layouts that provide a great user experience.
+    </p>
+     </div>
+   </div>
+  </div>
+</div>
+
+<!-- --------------------- My Projects --------------------- -->
+<div id="portfolio">
+<div class="container">
+  <h1 class="sub-title"data-en="My Projects" data-ar="مشروع التخرج">My Projects</h1>
+  <div class="work-list">
+    <div class="work">
+      <img src="image/image0.png">
+      <img src="image/image00.png">
+      <div class="layer">
+    <h3 data-en="Graduation Project – WJHATAK" 
+        data-ar="مشروع التخرج – WJHATAK">
+        Graduation Project – WJHATAK
+    </h3>
+    <p data-en="A smart tourist guide was developed to help users explore the landmarks of Riyadh and discover new places effortlessly. The project involved designing user interfaces and user experience (UI/UX) screens using Figma, and implementing the web interface with HTML and CSS, focusing on ease of use, multilingual support, and delivering a smooth and efficient user experience.
+"
+       data-ar="
+تم تطوير دليل سياحي ذكي يساعد المستخدمين على استكشاف معالم الرياض وأماكن جديدة. تم تصميم شاشات واجهة المستخدم/تجربة المستخدم في Figma وتنفيذ واجهة الويب باستخدام HTML وCSS، مع التركيز على سهولة الاستخدام ودعم تعدد اللغات وتجربة مستخدم سلسة.   ابي كلام ارتب عن المشروع  
+">
+       Developed a smart tourism guide that helps users explore Riyadh’s attractions and new places. Designed the UI/UX screens in Figma and implemented the web interface using HTML & CSS, focusing on usability, multilingual support, and a smooth user experience.
+    </p>
+             </div>
+         </div>
+       </div>
+    </div>
+ </div>
+<!-- --------------------- Footer & Contact --------------------- -->
+  <div class="footer">
+    <div id="contact">
+      <div class="container">
+        <h1 class="sub-title-fotter" data-en="Contact Me" data-ar="تواصل معي">Contact Me</h1>
+        <div class="contact-list">   
+
+<a href="mailto:ranaalh728@gmail.com" class="contact-card" target="_blank">
+  <div class="contact-header">
+    <i class="fa-regular fa-paper-plane"></i>
+    <span class="title" data-en="Email" data-ar="البريد الالكتروني">Email</span>
+  </div>
+</a>
+
+<a href="tel:+966553180111" class="contact-card" target="_blank">
+  <div class="contact-header">
+    <i class="fa-solid fa-phone"></i>
+    <span class="title" data-en="Phone" data-ar="الهاتف">Phone</span>
+  </div>
+</a>
+
+<a href="image/Rana Ahmed Nasser Abuhaimed  1.pdf" class="contact-card" target="_blank">
+  <div class="contact-header">
+    <i class="fa-regular fa-file-lines"></i>
+    <span class="title"data-en="CV" data-ar="السيرة الذاتية">CV</span>
+  </div>
+</a>
+
+<div class="contact-card">
+  <div class="contact-header">
+    <i class="fa-solid fa-share-nodes"></i>
+    <span class="title"data-en="Social Media" data-ar="وسائل التواصل الاجتماعي">Social Media</span>
+  </div>
+  <div class="social-icons">
+    <a href="https://instagram.com/raabuhaimed" target="_blank" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://linkedin.com/in/rana-abuhaimed" target="_blank" aria-label="LinkedIn">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+    <a href="https://wa.me/966553180111" target="_blank" aria-label="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+ </div>
+</div>
+
+<!-- -------------------------------Copy right-------------------------------------->
+      <div class="copyright">
+   <p data-en="Made with ❤️ © 2026 Rana Abuhaimed. All rights reserved."
+   data-ar="تم الإنشاء بحب ❤️ © 2026 رنا أبوحيمد. كل الحقوق محفوظة.">
+   Made with ❤️ © 2026 Rana Abuhaimed. All rights reserved.
+   </p>
+</div>
+
+<!-- ---------------------------------back to top---------------------------------->
+<a href="#" id="back-to-top">
+  <i class="fa-solid fa-arrow-up"></i>
+</a>
+
+   <div id="overlay"></div>
+
+
+ <!------------------------------------------ JavaScript Menu ---------------------->
+<script>
+const menu = document.getElementById("menu");
+const openBtn = document.getElementById("menu-open");
+const closeBtn = document.getElementById("menu-close");
+const overlay = document.getElementById("overlay");
+
+
+openBtn.addEventListener("click", () => {
+  menu.classList.add("show");
+  overlay.classList.add("active");
+});
+
+closeBtn.addEventListener("click", () => {
+  menu.classList.remove("show");
+  overlay.classList.remove("active");
+});
+
+menu.querySelectorAll("a").forEach(link => {
+
+  if(link.closest("#contact")) {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();         
+      const url = link.getAttribute("href");
+      window.open(url, "_blank");  
+      menu.classList.remove("show");
+      overlay.classList.remove("active");
+    });
+  } else {
+
+    link.addEventListener("click", () => {
+      menu.classList.remove("show");
+      overlay.classList.remove("active");
+    });
+  }
+
+});
+
+overlay.addEventListener("click", () => {
+  menu.classList.remove("show");
+  overlay.classList.remove("active");
+});
+</script>
+
+  <!------------------------------------------script back-to-top------------------------------------------------>
+<script>
+const backToTop = document.getElementById("back-to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) { 
+    backToTop.classList.add("show");
+  } else {
+    backToTop.classList.remove("show");
+  }
+});
+
+backToTop.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' }); 
+});
+</script>
+
+
+<script>
+function opentab(event, tabName) {
+  const tabLinks = document.querySelectorAll(".tab-links");
+  const tabContents = document.querySelectorAll(".tab-contents");
+
+  tabLinks.forEach(link => link.classList.remove("active-link"));
+  tabContents.forEach(content => content.classList.remove("active-tab"));
+
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabName).classList.add("active-tab");
+}
+</script>
+
+<script>
+let currentLang = "en";
+
+const toggleBtn = document.getElementById("lang-toggle");
+
+toggleBtn.addEventListener("click", () => {
+  currentLang = currentLang === "en" ? "ar" : "en";
+
+  document.body.lang = currentLang;
+  document.body.dir = currentLang === "ar" ? "rtl" : "ltr";
+
+  document.querySelectorAll("[data-en]").forEach(el => {
+    el.textContent = el.getAttribute(`data-${currentLang}`);
+  });
+});
+
+/* اللغة الافتراضية */
+toggleBtn.click();
+</script>
+
+
+<script>
+function openCert(card) {
+  const img = card.querySelector("img").src;
+  const win = window.open("", "_blank");
+  win.document.write(`
+    <html>
+      <head>
+        <title>Certificate</title>
+        <style>
+          body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+          }
+          img {
+            max-width: 95%;
+            max-height: 95%;
+          }
+        </style>
+      </head>
+      <body>
+        <img src="${img}">
+      </body>
+    </html>
+  `);
+}
+</script>
+
+</body>
+</html>

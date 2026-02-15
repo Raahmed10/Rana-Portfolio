@@ -1,0 +1,496 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rana Abuhaiamed | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/bacbc4a8e1.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+ <!-- ----------------------------------------------------- Header ---------------------------------------------------------------- -->
+<header id="site-header"
+  class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4
+         text-[#5c6c7d] bg-[#C3D3E4]
+         shadow-[0_8px_18px_rgba(191,219,243,0.2)]">
+
+  <div class="flex items-center gap-4 ltr">
+    <button id="menu-open" class="text-2xl text-[#4e545c]">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="cursor-pointer text-xl text-[#4e545c]">
+      <i id="lang-toggle" class="fa-solid fa-globe"></i>
+    </div>
+  </div>
+</header>
+<!-- ---------------------------------------------------- Navigation -------------------- ----------------------------------->
+<nav
+  id="menu"
+  class="fixed top-0 h-full w-64 z-50
+         bg-[#C3D3E4] shadow-lg
+         transform transition-transform duration-300
+         -translate-x-full left-0">
+
+  <ul class="flex flex-col p-6 space-y-4 text-[#5c6c7d]">
+    <li class="flex">
+      <button id="menu-close"
+        class="text-[#4e545c] text-2xl focus:outline-none ms-auto"
+        aria-label="Close menu">✕
+      </button>
+    </li>
+    <li><a href="#about" class="block px-4 py-2 rounded hover:bg-[#E0E6EB]" data-en="About Me" data-ar="نبذة عني">About Me</a></li>
+    <li><a href="#certificates" class="block px-4 py-2 rounded hover:bg-[#E0E6EB]" data-en="Certificates" data-ar="الشهادات">Certificates</a></li>
+    <li><a href="#services" class="block px-4 py-2 rounded hover:bg-[#E0E6EB]" data-en="My Skills" data-ar="مهاراتي">My Skills</a></li>
+    <li><a href="#portfolio" class="block px-4 py-2 rounded hover:bg-[#E0E6EB]" data-en="My Projects" data-ar="مشاريعي">My Projects</a></li>
+    <li><a href="#contact" class="block px-4 py-2 rounded hover:bg-[#E0E6EB]" data-en="Contact Me" data-ar="تواصل معي">Contact Me</a></li>
+  </ul>
+</nav>
+<!-- ------------------------------------------------- Profile Section ------------------------------------------------------ -->
+  <div class="bg-gradient-to-b from-[#E5EDF3] via-[#F6FAFB] to-[#F6FAFB] py-32">
+
+  <div
+    class="bg-white rounded-[40px] shadow-2xl
+           p-10 md:p-14 mt-12
+           flex flex-col md:flex-row items-center gap-10
+           max-w-5xl mx-auto">
+  <div class="flex flex-col md:flex-row items-center gap-8">
+<!-- Image -->
+  <div class="relative group flex-shrink-0">
+  <img
+      src="image/Photo.png"
+      alt="profile"
+      class="w-44 h-44 md:w-56 md:h-56 rounded-full object-cover object-[50%_15%]
+             shadow-xl border-4 border-white
+             transition-transform duration-500 group-hover:scale-105"
+    />
+  <div
+      class="absolute inset-0 rounded-full
+             bg-gradient-to-t from-transparent via-white/30 to-transparent
+             opacity-50 pointer-events-none">
+</div>
+</div>
+<!-- Text -->
+  <div class="max-w-xl text-center md:text-left lang-align">
+    <p class="text-[#5c6c7d] text-lg mb-2 font-medium tracking-wide"
+       data-en="UI/UX Designer"
+       data-ar="مصممة واجهات وتجربة مستخدم">
+      UI/UX Designer
+  </p>
+    <h1 class="text-[#C3D3E4] text-4xl md:text-5xl font-bold mb-2 leading-snug"
+        data-en="Rana Ahmed Abuhaimed"
+        data-ar="رنا أحمد أبوحيمد">
+      Rana Ahmed Abuhaimed
+  </h1>
+    <h2 class="text-2xl md:text-3xl font-normal text-[#5c6c7d] mb-3"
+        data-en="Software Engineering Majer"
+        data-ar="تخصص هندسة برمجيات">
+      Software Engineering Trainee
+  </h2>
+    <p class="text-gray-600 text-base md:text-lg mt-2 leading-relaxed"
+       data-en="Passionate about crafting beautiful UI/UX and building smart software solutions."
+       data-ar="شغوفة بتصميم واجهات مستخدم جذابة وبناء حلول برمجية ذكية.">
+      Passionate about crafting beautiful UI/UX and building smart software solutions.
+  </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ----------------------------------------------------- About Me ----------------------------------------------------- -->
+<div id="about" class="bg-[#F6FAFB] py-16">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <h1 class="sub-title text-[#5c6c7d] text-4xl font-bold mb-8" data-en="About Me" data-ar="نبذة عني">
+      About Me
+    </h1>
+    <p class="text-gray-700 text-lg mb-12" 
+       data-en="I am Rana Abuhaimed, an advanced Software Engineering student. I have a strong academic and practical background in software development, system design, and requirements analysis. I am passionate about building scalable technical solutions that improve efficiency and deliver real value, and I enjoy designing seamless user experiences through UI/UX and making data-driven decisions."
+       data-ar="أنا رنا أبوحيمد، طالبة هندسة برمجيات متقدمة. أمتلك خلفية أكاديمية وعملية في تطوير البرمجيات، وتصميم الأنظمة، وتحليل المتطلبات. شغوفة ببناء حلول تقنية قابلة للتوسع تسهم في تحسين الكفاءة وتقديم قيمة حقيقية، كما أستمتع بتصميم تجارب مستخدم سلسة من خلال UI/UX، واتخاذ قرارات مدعومة بالبيانات.">
+      I’m Rana Abuhaimed, an advanced Software Engineering student based in Riyadh...
+    </p>
+<!-- ---------------- -------------------------------------Tabs -------------------------------------------------------------->
+    <div class="w-full border rounded-lg bg-white shadow-md overflow-hidden mb-6 flex">
+      <button 
+        class="tab-links active-link flex-1 text-center px-6 py-3 bg-[#E5EDF3] text-[#5c6c7d] font-semibold transition-all duration-200" 
+        onclick="opentab(event,'skills')" 
+        data-en="Skills" data-ar="المهارات">
+        Skills
+      </button>
+      <button 
+        class="tab-links flex-1 text-center px-6 py-3 text-gray-500 font-semibold hover:text-[#5c6c7d] transition-all duration-200" 
+        onclick="opentab(event,'experience')" 
+        data-en="Experience" data-ar="الخبرة">
+        Experience
+      </button>
+      <button 
+        class="tab-links flex-1 text-center px-6 py-3 text-gray-500 font-semibold hover:text-[#5c6c7d] transition-all duration-200" 
+        onclick="opentab(event,'education')" 
+        data-en="Education" data-ar="التعليم">
+        Education
+      </button>
+    </div>
+<!-- -----------------------------------------------Tab Contents --------------------------------------------------------- -->
+    <div class="w-full">
+<!-- Skills Tab -->
+  <div id="skills" class="tab-contents w-full">
+    <ul class="space-y-4 text-gray-700">
+      <li class="p-4 rounded-lg hover:bg-gray-50 transition-colors">
+        <span class="font-semibold text-[#1e2022] text-lg" data-en="UI/UX" data-ar="تصميم واجهات المستخدم">UI/UX</span>
+        <p class="text-gray-600 mt-1" data-en="Designing web/App interfaces" data-ar="تصميم واجهات المواقع والتطبيقات">Designing web/App interfaces</p>
+      </li>
+      <li class="p-4 rounded-lg hover:bg-gray-50 transition-colors">
+        <span class="font-semibold text-[#1e2022] text-lg" data-en="Web development" data-ar="تطوير الويب">Web development</span>
+        <p class="text-gray-600 mt-1" data-en="Web app development" data-ar="تطوير تطبيقات الويب">Web app development</p>
+      </li>
+      <li class="p-4 rounded-lg hover:bg-gray-50 transition-colors">
+        <span class="font-semibold text-[#1e2022] text-lg" data-en="App development" data-ar="تطوير التطبيقات">App development</span>
+        <p class="text-gray-600 mt-1" data-en="Building Android/ios apps" data-ar="بناء تطبيقات أندرويد وiOS">Building Android/ios apps</p>
+      </li>
+    </ul>
+  </div>
+ <!-- Experience Tab -->
+  <div id="experience" class="tab-contents hidden w-full">
+    <ul class="space-y-4 text-gray-700">
+      <li class="p-4 rounded-lg hover:bg-gray-50 transition-colors">
+        <span class="font-semibold text-[#1e2022] text-lg" data-en="COOP Trainee" data-ar="التدريب التعاوني">COOP Trainee</span>
+        <p class="text-gray-600 mt-1" data-en="Enterprise Architecture & Data | Solutions by STC (Sep2026)" data-ar="هندسة المؤسسات والبيانات | حلول STC (سبتمبر 2026)">Enterprise Architecture & Data | Solutions by STC (Sep2026)</p>
+      </li>
+      <li class="p-4 rounded-lg hover:bg-gray-50 transition-colors">
+        <span class="font-semibold text-[#1e2022] text-lg" data-en="Graduation Project" data-ar="مشروع التخرج">Graduation Project</span>
+        <p class="text-gray-600 mt-1" data-en="WJHATAK | Al Yamamah University (Dec2025)" data-ar="WJHATAK | جامعة اليمامة (ديسمبر 2025)">WJHATAK | Al Yamamah University (Dec2025)</p>
+      </li>
+      <li class="p-4 rounded-lg hover:bg-gray-50 transition-colors">
+        <span class="font-semibold text-[#1e2022] text-lg" data-en="Summer Training Program" data-ar="برنامج التدريب الصيفي">Summer Training Program</span>
+        <p class="text-gray-600 mt-1" data-en="Corporate & Institutional Banking | Bank AlJazira (Jul2025)" data-ar="الخدمات المصرفية للشركات والمؤسسات | بنك الجزيرة (يوليو 2025)">Corporate & Institutional Banking | Bank AlJazira (Jul2025)</p>
+      </li>
+    </ul>
+  </div>
+<!-- Education Tab -->
+  <div id="education" class="tab-contents hidden w-full">
+    <ul class="space-y-4 text-gray-700">
+      <li class="p-4 rounded-lg hover:bg-gray-50 transition-colors">
+        <span class="font-semibold text-[#1e2022] text-lg" data-en="SQL Fundamentals for Data Analysts" data-ar="أساسيات SQL لمحللي البيانات">SQL Fundamentals for Data Analysts</span>
+        <p class="text-gray-600 mt-1" data-en="Corporate Finance Institute (CFI) via Coursera" data-ar="معهد التمويل المؤسسي (CFI) عبر كورسيرا">Corporate Finance Institute (CFI) via Coursera</p>
+      </li>
+      <li class="p-4 rounded-lg hover:bg-gray-50 transition-colors">
+        <span class="font-semibold text-[#1e2022] text-lg" data-en="Financial Statements in Power BI" data-ar="البيانات المالية في Power BI">Financial Statements in Power BI</span>
+        <p class="text-gray-600 mt-1" data-en="Corporate Finance Institute (CFI) via Coursera" data-ar="معهد التمويل المؤسسي (CFI) عبر كورسيرا">Corporate Finance Institute (CFI) via Coursera</p>
+      </li>
+      <li class="p-4 rounded-lg hover:bg-gray-50 transition-colors">
+        <span class="font-semibold text-[#1e2022] text-lg" data-en="Project Management Professional (PMP)" data-ar="محترف إدارة المشاريع (PMP)">Project Management Professional (PMP)</span>
+        <p class="text-gray-600 mt-1" data-en="On-Campus University" data-ar="جامعة داخل الحرم الجامعي">On-Campus University</p>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- --------------------- -----------------------------Certificates ------------------------------------------------------------ -->
+<div id="certificates" class="bg-[#F6FAFB] py-16">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <h1 class="sub-title text-[#5c6c7d] text-4xl font-bold mb-12" data-en="Certificates" data-ar="الشهادات">
+      Certificates
+    </h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <div class="certificate-card bg-white shadow-md rounded-lg overflow-hidden cursor-pointer transform hover:scale-105 transition duration-300" onclick="openCert(this)">
+        <img src="image/C1.jpg" alt="SQL Certificate" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-[#5c6c7d] font-semibold text-lg" data-en="SQL Fundamentals for Data Analysts" data-ar="أساسيات SQL لمحللي البيانات">
+            SQL Fundamentals for Data Analysts
+          </h3>
+        </div>
+      </div>
+
+      <div class="certificate-card bg-white shadow-md rounded-lg overflow-hidden cursor-pointer transform hover:scale-105 transition duration-300" onclick="openCert(this)">
+        <img src="image/C2.jpg" alt="Power BI Certificate" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-[#5c6c7d] font-semibold text-lg" data-en="Financial Statements in Power BI" data-ar="القوائم المالية باستخدام Power BI">
+            Financial Statements in Power BI
+          </h3>
+        </div>
+      </div>
+
+      <div class="certificate-card bg-white shadow-md rounded-lg overflow-hidden cursor-pointer transform hover:scale-105 transition duration-300" onclick="openCert(this)">
+        <img src="image/C3.jpg" alt="PMP Certificate" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-[#5c6c7d] font-semibold text-lg" data-en="Project Management Professional(PMP)" data-ar="ادارة المشاريع الاحترافية">
+            Project Management Professional(PMP)
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- -------------------------------------------------------- My Skills ------------------------------------------------------ -->
+<section id="services" class="bg-[#F6FAFB] py-16">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+  <div class="flex justify-between items-center mb-12">
+
+  <h1 class="text-4xl font-bold text-[#5c6c7d]" data-en="My Skills" data-ar="مهاراتي">
+  My Skills
+  </h1>
+  </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+      <div class="skill-card bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center cursor-pointer 
+                  transition-transform transform hover:scale-105 active:scale-95 active:shadow-inner">
+        <i class="fa-solid fa-globe text-4xl text-[#4e545c] mb-4"></i>
+        <h2 class="text-xl font-semibold text-[#c3d3e4] mb-2" data-en="Web Development" data-ar="تطوير الويب">Web Development</h2>
+        <p class="text-gray-600" data-en="I develop responsive web pages using HTML, CSS, and JavaScript to build clean and functional websites."
+           data-ar="أقوم بتطوير صفحات ويب متجاوبة باستخدام HTML وCSS وJavaScript لبناء مواقع نظيفة وعملية.">
+           I develop responsive web pages using HTML, CSS, and JavaScript to build clean and functional websites.
+        </p>
+      </div>
+
+      <div class="skill-card bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-center cursor-pointer 
+                  transition-transform transform hover:scale-105 active:scale-95 active:shadow-inner">
+        <i class="fa-solid fa-mobile-screen-button text-4xl text-[#4e545c] mb-4"></i>
+        <h2 class="text-xl font-semibold text-[#c3d3e4] mb-2" data-en="UI/UX Development" data-ar="تطوير واجهات المستخدم وتجربة المستخدم">UI/UX Development</h2>
+        <p class="text-gray-600" data-en="I create user-friendly interfaces and improve user experience through research, wireframes, and prototypes."
+           data-ar="أقوم بإنشاء واجهات سهلة الاستخدام وتحسين تجربة المستخدم من خلال البحث والنماذج الأولية.">
+           I create user-friendly interfaces and improve user experience through research, wireframes, and prototypes.
+        </p>
+      </div>
+
+      <div class="skill-card bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center cursor-pointer 
+                  transition-transform transform hover:scale-105 active:scale-95 active:shadow-inner">
+        <i class="fa-solid fa-brush text-4xl text-[#4e545c] mb-4"></i>
+        <h2 class="text-xl font-semibold text-[#c3d3e4] mb-2" data-en="Web Design" data-ar="تصميم الويب">Web Design</h2>
+        <p class="text-gray-600" data-en="I design modern and responsive websites with clean layouts that provide a great user experience."
+           data-ar="أقوم بتصميم مواقع حديثة ومتجاوبة بتنسيقات نظيفة توفر تجربة مستخدم ممتازة.">
+           I design modern and responsive websites with clean layouts that provide a great user experience.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ----------------------------------------------------- My Projects ----------------------------------------------------------- -->
+<section id="portfolio" class="py-[180px]" style="background-color: #F6FAFB;">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <h1
+      class="text-3xl md:text-4xl font-bold text-left"
+      style="color: #5c6c7d;"
+      data-en="My Projects"
+      data-ar="مشروع التخرج"
+    >
+      My Projects
+    </h1>
+    <div class="grid [grid-template-columns:repeat(auto-fit,minmax(250px,1fr))] gap-10 mt-[50px]">
+      
+      <div class="group relative overflow-hidden rounded-[10px]">
+        <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+          <img
+            src="image/image0.png"
+            alt="Project Image 1"
+            class="w-[45%] rounded-[12px] transition-transform duration-500 group-hover:scale-[1.04]"
+          />
+          <img
+            src="image/image00.png"
+            alt="Project Image 2"
+            class="w-[45%] rounded-[12px] transition-transform duration-500 group-hover:scale-[1.04]"
+          />
+        </div>
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center p-5 text-center
+                 bg-gradient-to-t from-[rgba(195,211,228,0.75)] to-[rgba(195,211,228,0.25)]
+                 opacity-0 transition-opacity duration-[400ms] group-hover:opacity-100"
+        >
+          <h3
+            class="m-0 text-[40px] font-bold text-[#4e545c]"
+            data-en="Graduation Project | WJHATAK"
+            data-ar="مشروع التخرج | WJHATAK"
+          >
+            Graduation Project | WJHATAK
+          </h3>
+          <p
+            class="mt-4 text-[20px] max-w-full text-[#5c6c7d]"
+            data-en="A smart tourist guide was developed to help users explore Riyadh's landmarks and discover new places effortlessly. The project included designing user interfaces and user experience (UI/UX) screens in Figma and implementing the web interface with HTML and CSS, focusing on ease of use, multilingual support, and a smooth, efficient user experience."
+            data-ar="تم تطوير دليل سياحي ذكي يساعد المستخدمين على استكشاف معالم الرياض وأماكن جديدة بسهولة. شمل المشروع تصميم شاشات واجهة المستخدم وتجربة المستخدم (UI/UX) في Figma وتنفيذ واجهة الويب باستخدام HTML وCSS، مع التركيز على سهولة الاستخدام ودعم تعدد اللغات وتجربة مستخدم سلسة وفعالة."
+          >
+            A smart tourist guide was developed to help users explore Riyadh's landmarks and discover new places effortlessly. The project included designing user interfaces and user experience (UI/UX) screens in Figma and implementing the web interface with HTML and CSS, focusing on ease of use, multilingual support, and a smooth, efficient user experience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ---------------------------------------------------- Contact me ---------------------------------------------------------------->
+<div class="footer bg-[#F6FAFB] py-16">
+  <div id="contact" class="container mx-auto px-6 md:px-12">
+    <h1 class="text-3xl font-bold text-left mb-10 text-[#5c6c7d]" data-en="Contact Me" data-ar="تواصل معي">
+      Contact Me
+    </h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
+      <a href="mailto:ranaalh728@gmail.com" class="contact-card bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center text-center" target="_blank">
+        <div class="contact-header flex flex-col items-center gap-3">
+          <i class="fa-regular fa-paper-plane text-3xl text-[#5c6c7d]"></i>
+          <span class="title text-lg font-semibold text-[#5c6c7d]" data-en="Email" data-ar="البريد الالكتروني">Email</span>
+        </div>
+      </a>
+
+      <a href="tel:+966553180111" class="contact-card bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center text-center" target="_blank">
+        <div class="contact-header flex flex-col items-center gap-3">
+          <i class="fa-solid fa-phone text-3xl text-[#5c6c7d]"></i>
+          <span class="title text-lg font-semibold text-[#5c6c7d]" data-en="Phone" data-ar="الهاتف">Phone</span>
+        </div>
+      </a>
+
+      <a href="image/Rana Ahmed Nasser Abuhaimed  1.pdf" class="contact-card bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center text-center" target="_blank">
+        <div class="contact-header flex flex-col items-center gap-3">
+          <i class="fa-regular fa-file-lines text-3xl text-[#5c6c7d]"></i>
+          <span class="title text-lg font-semibold text-[#5c6c7d]" data-en="CV" data-ar="السيرة الذاتية">CV</span>
+        </div>
+      </a>
+
+      <div class="contact-card bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center">
+        <div class="contact-header flex flex-col items-center gap-3 mb-4">
+          <i class="fa-solid fa-share-nodes text-3xl text-[#5c6c7d]"></i>
+          <span class="title text-lg font-semibold text-[#5c6c7d]" data-en="Social Media" data-ar="وسائل التواصل الاجتماعي">Social Media</span>
+        </div>
+        <div class="social-icons flex gap-4">
+          <a href="https://instagram.com/raabuhaimed" target="_blank" aria-label="Instagram" class="text-[#5c6c7d] hover:text-pink-500 transition">
+            <i class="fa-brands fa-instagram text-2xl"></i>
+          </a>
+          <a href="https://linkedin.com/in/rana-abuhaimed" target="_blank" aria-label="LinkedIn" class="text-[#5c6c7d] hover:text-blue-600 transition">
+            <i class="fa-brands fa-linkedin-in text-2xl"></i>
+          </a>
+          <a href="https://wa.me/966553180111" target="_blank" aria-label="WhatsApp" class="text-[#5c6c7d] hover:text-green-500 transition">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ---------------------------------------------------Copyright ------------------------------------------------------------------->
+<div class="copyright bg-[#F6FAFB] py-6">
+  <p class="text-sm text-[#5c6c7d] no-rtl text-center"
+     data-en="Made with ❤️ © 2026 Rana Abuhaimed. All rights reserved."
+     data-ar="تم الإنشاء بحب ❤️ © 2026 رنا أبوحيمد. كل الحقوق محفوظة.">
+    تم الإنشاء بحب ❤️ © 2026 رنا أبوحيمد. كل الحقوق محفوظة.
+  </p>
+</div>
+<!-- --------------------------------------------------- back to top------------------------------------------------------------------->
+<a
+  href="#"
+  id="back-to-top"
+  class="fixed bottom-5 right-5 z-50 w-9 h-9 rounded-full
+         bg-[#5c6c7d] text-white
+         flex items-center justify-center
+         shadow-md  
+         hover:bg-[#F6FAFB]
+         transition-all duration-300
+         opacity-0 invisible scale-90"
+  aria-label="Back to top"
+>
+  <i class="fa-solid fa-arrow-up text-sm"></i>
+</a>
+<!------------------------------------------------------script back-to-top------------------------------------------------------------->
+<script>
+  const backToTop = document.getElementById("back-to-top");
+
+   window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTop.classList.remove("opacity-0", "invisible", "scale-90");
+      backToTop.classList.add("opacity-100", "visible", "scale-100");
+    } else {
+      backToTop.classList.add("opacity-0", "invisible", "scale-90");
+      backToTop.classList.remove("opacity-100", "visible", "scale-100");
+    }
+  });
+  backToTop.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+<!-- ------------------ -----------------------------JavaScript Tabs -------------------------------------------------------->
+<script>
+function opentab(event, tabName) {
+  const tabLinks = document.querySelectorAll(".tab-links");
+  const tabContents = document.querySelectorAll(".tab-contents");
+
+  tabLinks.forEach(link => {
+    link.classList.remove("active-link", "bg-[#E5EDF3]", "text-[#5c6c7d]");
+    link.classList.add("text-gray-500");
+  });
+  tabContents.forEach(content => content.classList.add("hidden"));
+  event.currentTarget.classList.add("active-link", "bg-[#E5EDF3]", "text-[#5c6c7d]");
+  event.currentTarget.classList.remove("text-gray-500");
+
+  document.getElementById(tabName).classList.remove("hidden");
+}
+</script>
+
+<!-- ------------------ -----------------------------اللغه و المنيو  ------------------------------------------------------------- -->
+<div id="menu-overlay" class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none z-40 transition-opacity duration-300"></div>
+  <script>
+  const menu = document.getElementById("menu");
+  const openBtn = document.getElementById("menu-open");
+  const closeBtn = document.getElementById("menu-close");
+  const overlay = document.getElementById("menu-overlay");
+  const toggleBtn = document.getElementById("lang-toggle");
+  function dirNow() {
+    return getComputedStyle(document.documentElement).direction; // "rtl" أو "ltr"
+  }
+  function applyMenuSide() {
+    menu.classList.remove("left-0", "right-0");
+    if (dirNow() === "rtl") menu.classList.add("right-0");
+    else menu.classList.add("left-0");
+  }
+  function openMenu() {
+    applyMenuSide();
+    menu.classList.remove("translate-x-0", "translate-x-full", "-translate-x-full");
+    menu.classList.add("translate-x-0");
+
+    overlay.classList.remove("opacity-0", "pointer-events-none");
+    overlay.classList.add("opacity-100", "pointer-events-auto");
+  }
+  function closeMenu() {
+    applyMenuSide();
+    menu.classList.remove("translate-x-0", "translate-x-full", "-translate-x-full");
+    if (dirNow() === "rtl") menu.classList.add("translate-x-full");
+    else menu.classList.add("-translate-x-full");
+
+    overlay.classList.remove("opacity-100", "pointer-events-auto");
+    overlay.classList.add("opacity-0", "pointer-events-none");
+  }
+  openBtn.addEventListener("click", openMenu);
+  closeBtn.addEventListener("click", closeMenu);
+  overlay.addEventListener("click", closeMenu);
+
+  menu.querySelectorAll("a").forEach(a => a.addEventListener("click", closeMenu));
+  let currentLang = localStorage.getItem("lang") || "en";
+
+  function setLanguage(lang) {
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+
+  document.querySelectorAll("[data-en],[data-ar]").forEach(el => {
+  const en = el.getAttribute("data-en");
+  const ar = el.getAttribute("data-ar");
+  el.textContent = lang === "ar" && ar ? ar : en;
+
+  if(!el.classList.contains("no-rtl")) {
+    if(lang === "ar") el.classList.add("text-right");
+    else el.classList.remove("text-right");
+  }
+});
+  localStorage.setItem("lang", lang);
+}
+toggleBtn.addEventListener("click", (e) => {
+  e.stopPropagation(); 
+  currentLang = currentLang === "en" ? "ar" : "en";
+  setLanguage(currentLang);
+});
+setLanguage(currentLang);
+</script>
+
+</body>
+</html>
+
+
+
+
+
